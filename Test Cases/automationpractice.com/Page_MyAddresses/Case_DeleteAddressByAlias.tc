@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Case_DeleteAddressByAlias</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b2dbae9b-cd01-4899-aae7-b7446680ee46</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>49eeae10-31b5-4f3f-81e1-55590af06449</id>
+      <masked>false</masked>
+      <name>Alias</name>
+   </variable>
+</TestCaseEntity>

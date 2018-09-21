@@ -18,14 +18,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
-WebUI.callTestCase(findTestCase('Common/Case_GoToUrl'), [('url') : GlobalVariable.homeUrl + '?controller=addresses'])
+WebUI.callTestCase(findTestCase('automationpractice.com/Page_Home/Case_OpenBrowserHere'), [('url') : 'http://automationpractice.com/index.php'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-deleteButton = WebUI.modifyObjectProperty(findTestObject('Page_MyAddresses/Button_DeleteAddress'),
-	'xpath', 'equals', ('//a[@title=\'Delete\' and ../../li[1]/h3/text()=\'' + alias) + '\']', true)
+WebUI.callTestCase(findTestCase('automationpractice.com/Page_Home/Case_GoToSignIn'), [:], FailureHandling.STOP_ON_FAILURE)
 
-if (WebUI.waitForElementPresent(deleteButton, 1)) {
-	return deleteButton
-} else {
-	return null
+WebUI.callTestCase(findTestCase('automationpractice.com/Page_Authentication/Case_SignIn'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('automationpractice.com/Page_MyAccount/Case_GoToMyAddresses'), [:], FailureHandling.STOP_ON_FAILURE)
+
+if(WebUI.callTestCase(findTestCase('automationpractice.com/Page_MyAddresses/Case_FindAddress'), [('Alias') : Data_Alias], null) == null)
+{
+	WebUI.callTestCase(findTestCase('automationpractice.com/Page_MyAddresses/Case_GoToAddNewAddress'), [:], FailureHandling.STOP_ON_FAILURE)
+
+	WebUI.callTestCase(findTestCase('automationpractice.com/Page_AddNewAddress/Case_AddNewAddress'), [('Address1') : Data_Address1
+		, ('City') : Data_City, ('State') : Data_State, ('Postcode') : Data_Postcode, ('Phone') : Data_Phone, ('Alias') : Data_Alias],
+	FailureHandling.STOP_ON_FAILURE)
 }
+
+WebUI.closeBrowser()
+

@@ -6,8 +6,16 @@
    <elementGuidId>c88de7ee-dc4b-40bb-beb6-2b4ace569999</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//a[@class = 'btn btn-default button button-small']</value>
+         <value>id(&quot;center_column&quot;)/div[@class=&quot;addresses&quot;]/div[@class=&quot;bloc_adresses row&quot;]/div[@class=&quot;col-xs-12 col-sm-6 address&quot;]/ul[@class=&quot;first_item item box&quot;]/li[@class=&quot;address_update&quot;]/a[@class=&quot;btn btn-default button button-small&quot;]/span[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +25,7 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
+      <value>span</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -27,17 +35,10 @@
       <value>Delete</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;center_column&quot;)/div[@class=&quot;addresses&quot;]/div[@class=&quot;bloc_adresses row&quot;]/div[@class=&quot;col-xs-12 col-sm-6 address&quot;]/ul[@class=&quot;first_item item box&quot;]/li[@class=&quot;address_update&quot;]/a[@class=&quot;btn btn-default button button-small&quot;]/span[1]</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>btn btn-default button button-small</value>
    </webElementProperties>
 </WebElementEntity>

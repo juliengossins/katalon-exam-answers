@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Case_SignIn</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ebe1334a-12b7-466d-8a91-70227853a062</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>75ea620c-a509-48e6-96f1-fa009c055356</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variable>
+</TestCaseEntity>

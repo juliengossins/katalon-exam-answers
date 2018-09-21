@@ -19,21 +19,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Case_GoToUrl'), [('url') : GlobalVariable.homeUrl + '?controller=addresses'])
+deleteButton = WebUI.modifyObjectProperty(findTestObject('Page_MyAddresses/Button_DeleteAddress'), 'xpath', 'equals', ('//a[@title=\'Delete\' and ../../li[1]/h3/text()=\'' + 
+    Alias) + '\']', true)
 
-WebUI.click(findTestObject('Page_MyAddresses/Button_AddNewAddress'))
-
-WebUI.setText(findTestObject('Page_AddNewAddress/Input_Address1'), Address1)
-
-WebUI.setText(findTestObject('Page_AddNewAddress/Input_City'), City)
-
-WebUI.selectOptionByValue(findTestObject('Page_AddNewAddress/Dropdown_State'), State, true)
-
-WebUI.setText(findTestObject('Page_AddNewAddress/Input_Postcode'), Postcode)
-
-WebUI.setText(findTestObject('Page_AddNewAddress/Input_Phone'), Phone)
-
-WebUI.setText(findTestObject('Page_AddNewAddress/Input_Alias'), Alias)
-
-WebUI.click(findTestObject('Page_AddNewAddress/Button_Save'))
+if (WebUI.waitForElementPresent(deleteButton, 1)) {
+    return deleteButton
+} else {
+	return null
+}
 
