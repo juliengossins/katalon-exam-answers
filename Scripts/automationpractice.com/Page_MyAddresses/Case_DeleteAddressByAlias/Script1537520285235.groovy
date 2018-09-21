@@ -24,5 +24,5 @@ if (deleteButton) {
     WebUI.acceptAlert()
 }
 
-WebUI.waitForElementClickable(findTestObject('Page_MyAddresses/Button_AddNewAddress'), 0)
+WebUI.waitForElementClickable(findTestObject('automationpractice.com/Page_MyAddresses/Button_AddNewAddress'), 0)
 

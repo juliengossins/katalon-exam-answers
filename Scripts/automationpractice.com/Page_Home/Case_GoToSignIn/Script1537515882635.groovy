@@ -17,7 +17,7 @@ try {
     /* Do we need to sign in? Check so by looking for text Sign in */
     WebUI.verifyTextPresent('Sign in', false)
 
-    WebUI.click(findTestObject('Page_Home/Button_SignIn'))
+    WebUI.click(findTestObject('automationpractice.com/Page_Home/Button_SignIn'))
 
     WebUI.waitForPageLoad(GlobalVariable.timeOut)
 }

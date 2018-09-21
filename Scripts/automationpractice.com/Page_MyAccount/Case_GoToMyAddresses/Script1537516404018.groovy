@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 try {
-    WebUI.click(findTestObject('Page_MyAccount/Button_MyAddresses'))
+    WebUI.click(findTestObject('automationpractice.com/Page_MyAccount/Button_MyAddresses'))
 
     WebUI.waitForPageLoad(GlobalVariable.timeOut)
 }

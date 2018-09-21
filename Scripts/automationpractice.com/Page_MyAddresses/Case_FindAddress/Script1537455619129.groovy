@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-deleteButton = WebUI.modifyObjectProperty(findTestObject('Page_MyAddresses/Button_DeleteAddress'), 'xpath', 'equals', ('//a[@title=\'Delete\' and ../../li[1]/h3/text()=\'' + 
+deleteButton = WebUI.modifyObjectProperty(findTestObject('automationpractice.com/Page_MyAddresses/Button_DeleteAddress'), 'xpath', 'equals', ('//a[@title=\'Delete\' and ../../li[1]/h3/text()=\'' + 
     Alias) + '\']', true)
 
 if (WebUI.waitForElementPresent(deleteButton, 1)) {

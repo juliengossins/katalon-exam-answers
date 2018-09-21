@@ -14,11 +14,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 try {
-    WebUI.setText(findTestObject('Page_Login/Input_Email'), GlobalVariable.loginUsername)
+    WebUI.setText(findTestObject('automationpractice.com/Page_Login/Input_Email'), GlobalVariable.loginUsername)
 
-    WebUI.setText(findTestObject('Page_Login/Input_Password'), GlobalVariable.loginPassword)
+    WebUI.setText(findTestObject('automationpractice.com/Page_Login/Input_Password'), GlobalVariable.loginPassword)
 
-    WebUI.click(findTestObject('Page_Login/Button_SignIn'))
+    WebUI.click(findTestObject('automationpractice.com/Page_Login/Button_SignIn'))
 
     WebUI.waitForPageLoad(GlobalVariable.timeOut)
 }
