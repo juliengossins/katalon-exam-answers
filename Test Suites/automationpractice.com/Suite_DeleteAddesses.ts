@@ -4,7 +4,7 @@
    <name>Suite_DeleteAddesses</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-09-21T11:55:57</lastRun>
+   <lastRun>2018-09-21T12:10:38</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>

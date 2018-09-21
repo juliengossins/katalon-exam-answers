@@ -22,7 +22,7 @@ if (deleteButton) {
     WebUI.click(deleteButton)
 
     WebUI.acceptAlert()
-}
 
-WebUI.waitForElementClickable(findTestObject('automationpractice.com/Page_MyAddresses/Button_AddNewAddress'), 0)
+    WebUI.verifyAlertNotPresent(2, FailureHandling.STOP_ON_FAILURE)
+}
 
