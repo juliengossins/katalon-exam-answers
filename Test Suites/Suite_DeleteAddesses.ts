@@ -4,7 +4,7 @@
    <name>Suite_DeleteAddesses</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-09-21T11:10:08</lastRun>
+   <lastRun>2018-09-21T11:27:55</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -15,7 +15,7 @@
       <guid>5d6f63b4-cac5-4aa8-80dc-1d31974e9dc8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Home/Scenario_DeleteAnAddress</testCaseId>
+      <testCaseId>Test Cases/automationpractice.com/Scenarios/Scenario_DeleteAnAddress</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>ab6e975c-bfa1-47f3-8c03-ec692a7a8d41</id>

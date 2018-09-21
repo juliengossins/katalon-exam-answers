@@ -4,7 +4,7 @@
    <name>Suite_AddAddresses</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-09-21T11:10:54</lastRun>
+   <lastRun>2018-09-21T11:26:22</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -15,7 +15,7 @@
       <guid>2f850497-d880-4769-9099-fec7c00bbc4d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Home/Scenario_AddAnAddress</testCaseId>
+      <testCaseId>Test Cases/automationpractice.com/Scenarios/Scenario_AddAnAddress</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>02e457cd-a6d6-4513-88f3-bced389c29e4</id>

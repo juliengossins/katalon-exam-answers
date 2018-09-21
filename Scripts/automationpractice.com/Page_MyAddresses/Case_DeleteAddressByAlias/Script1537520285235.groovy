@@ -13,9 +13,10 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-deleteButton = WebUI.callTestCase(findTestCase('automationpractice.com/Page_MyAddresses/Case_FindAddress'), [('Alias') : Alias], null)
+deleteButton = WebUI.callTestCase(findTestCase('automationpractice.com/Page_MyAddresses/Case_FindAddress'), [('Alias') : Alias], 
+    null)
 
-WebUI.waitForPageLoad(0)
+WebUI.waitForPageLoad(GlobalVariable.timeOut)
 
 if (deleteButton) {
     WebUI.click(deleteButton)
@@ -23,7 +24,5 @@ if (deleteButton) {
     WebUI.acceptAlert()
 }
 
-WebUI.click(deleteButton)
-
-WebUI.acceptAlert()
+WebUI.waitForElementClickable(findTestObject('Page_MyAddresses/Button_AddNewAddress'), 0)
 
