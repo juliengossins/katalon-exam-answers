@@ -29,14 +29,12 @@ WebUI.callTestCase(findTestCase('automationpractice.com/Page_Authentication/Case
 
 WebUI.callTestCase(findTestCase('automationpractice.com/Page_MyAccount/Case_GoToMyAddresses'), [:], FailureHandling.STOP_ON_FAILURE)
 
-if(WebUI.callTestCase(findTestCase('automationpractice.com/Page_MyAddresses/Case_FindAddress'), [('Alias') : Data_Alias], null) == null)
-{
-	WebUI.callTestCase(findTestCase('automationpractice.com/Page_MyAddresses/Case_GoToAddNewAddress'), [:], FailureHandling.STOP_ON_FAILURE)
+if (WebUI.callTestCase(findTestCase('automationpractice.com/Page_MyAddresses/Case_FindAddress'), [('Alias') : Data_Alias], 
+    null) == null) {
+    WebUI.callTestCase(findTestCase('automationpractice.com/Page_MyAddresses/Case_GoToAddNewAddress'), [:], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('automationpractice.com/Page_AddNewAddress/Case_AddNewAddress'), [('Address1') : Data_Address1
-		, ('City') : Data_City, ('State') : Data_State, ('Postcode') : Data_Postcode, ('Phone') : Data_Phone, ('Alias') : Data_Alias],
-	FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('automationpractice.com/Page_AddNewAddress/Case_AddNewAddress'), [('Address1') : Data_Address1
+            , ('City') : Data_City, ('State') : Data_State, ('Postcode') : Data_Postcode, ('Phone') : Data_Phone, ('Alias') : Data_Alias], 
+        FailureHandling.STOP_ON_FAILURE)
 }
-
-WebUI.closeBrowser()
 
