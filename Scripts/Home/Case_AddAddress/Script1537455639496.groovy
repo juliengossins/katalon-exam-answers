@@ -19,5 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/GoToUrl'), [('url') : GlobalVariable.homeUrl + '?controller=addresses'])
+WebUI.callTestCase(findTestCase('Common/Case_GoToUrl'), [('url') : GlobalVariable.homeUrl + '?controller=addresses'])
+
+WebUI.click(findTestObject('Page_MyAddresses/Button_AddNewAddress'))
+
+WebUI.setText(findTestObject('Page_AddNewAddress/Input_Address1'), Address1)
+
+WebUI.setText(findTestObject('Page_AddNewAddress/Input_City'), City)
+
+WebUI.selectOptionByValue(findTestObject('Page_AddNewAddress/Dropdown_State'), State, true)
+
+WebUI.setText(findTestObject('Page_AddNewAddress/Input_Postcode'), Postcode)
+
+WebUI.setText(findTestObject('Page_AddNewAddress/Input_Phone'), Phone)
+
+WebUI.setText(findTestObject('Page_AddNewAddress/Input_Alias'), Alias)
+
+WebUI.click(findTestObject('Page_AddNewAddress/Button_Save'))
 

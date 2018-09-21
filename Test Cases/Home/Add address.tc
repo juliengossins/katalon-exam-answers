@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Add an address. It uses the common function GoToUrl to go to the page you want in an efficient way.</description>
-   <name>Add address</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>46ae6bc8-5906-4545-aa71-8cf9d2aac1bd</testCaseGuid>
-</TestCaseEntity>

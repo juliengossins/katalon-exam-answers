@@ -37,13 +37,13 @@ try {
 	/* Do we need to sign in? Check so by looking for text Sign in */
 	WebUI.verifyTextPresent('Sign in', false)
 
-    WebUI.click(findTestObject('Login/a_Sign in'))
+    WebUI.click(findTestObject('Page_Home/Button_SignIn'))
 
-    WebUI.setText(findTestObject('Login/input_email'), GlobalVariable.loginUsername)
+    WebUI.setText(findTestObject('Page_Login/Input_Email'), GlobalVariable.loginUsername)
 
-    WebUI.setText(findTestObject('Login/input_passwd'), GlobalVariable.loginPassword)
+    WebUI.setText(findTestObject('Page_Login/Input_Password'), GlobalVariable.loginPassword)
 
-    WebUI.click(findTestObject('Login/span_Sign in'))
+    WebUI.click(findTestObject('Page_Login/Button_SignIn'))
 
     WebUI.navigateToUrl(url)
 
